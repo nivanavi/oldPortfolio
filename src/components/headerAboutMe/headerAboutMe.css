@@ -1,0 +1,72 @@
+ .header {
+    display: grid;
+    grid-template-columns: 3.5fr 8fr;
+     min-height: 30vw;
+}
+
+.myPhoto {
+    position: relative;
+}
+
+.myPhoto img {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    margin-top: -12vw;
+    margin-left: 2vw;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.shortInfo h1{
+    font-size: 3vw;
+    margin-top: 5vh;
+    width: 31ch;
+    color: black;
+    white-space: nowrap;
+    border-right: 3px solid blueviolet;
+    font-family: monospace;
+    overflow: hidden;
+    animation:
+            dash 1s step-end infinite,
+            typing 2.5s steps(31);
+}
+
+@keyframes dash {
+    0%{
+        border-color: blueviolet;
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: blueviolet;
+    }
+}
+@keyframes typing {
+    from { width: 0 }
+}
+
+.shortInfo p {
+    text-align: justify;
+    font-size: 2vw;
+    margin-top: 5vh;
+    margin-right: 14vw;
+    font-family: monospace;
+    overflow: hidden;
+    animation:
+            show 2.5s step-end;
+}
+
+@keyframes show {
+    0% {
+        color: transparent;
+    }
+    100%{
+        color: black;
+    }
+}
+
+

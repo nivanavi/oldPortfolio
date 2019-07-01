@@ -1,0 +1,96 @@
+.stack {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.stack img {
+    width: 6vw;
+    height: auto;
+    max-height: 6vw;
+    margin-right: 2vw;
+}
+
+.stack img:hover {
+    animation: likeMac 0.7s infinite;
+}
+@keyframes likeMac {
+    from,
+    to {
+        margin-bottom: 0;
+        transform: scale(1);
+    }
+    50% {
+        margin-top: -3vh;
+        transform: scale(1.1);
+    }
+    100% {
+        margin-bottom: 0;
+        transform: scale(1);
+    }
+}
+
+
+.demoAndDescription {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+}
+
+.descriptionProject {
+    padding: 0 2vw 0 2vw;
+    color: white;
+    font-family: monospace;
+    text-align: justify;
+    font-size: 2vw;
+}
+
+.demoProject {
+    padding: 2vw;
+}
+
+.demoProject img {
+    border-radius: 5px;
+    width: 100%;
+
+    box-shadow:5px 5px 14px 10px rgba(0,0,0,0.50);
+    -webkit-box-shadow:5px 5px 14px 10px rgba(0,0,0,0.50);
+    -moz-box-shadow:5px 5px 14px 10px rgba(0,0,0,0.50);
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    height: 3.5vw;
+}
+
+.siteLink {
+    display: inline-block;
+    color: dimgray;
+    font-size: 1.5vw;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.githubLink {
+    margin-left: 2vw;
+    display: inline-block;
+    color: dimgray;
+    font-size: 3vw;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.linkStyle:hover  {
+    color: white;
+    border-bottom: 3px solid blueviolet;
+}
+
+
+
+
