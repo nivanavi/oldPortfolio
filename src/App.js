@@ -27,7 +27,16 @@ class App extends Component {
                 })
                 }
 
-                <Review/>
+                { this.props.myProjects.reviews.map((review) => {
+                    return (
+                            <Review
+                            avatar={review.avatar}
+                            customer={review.customer}
+                            review={review.review}
+                            />
+                        )
+                })
+                }
 
                 <div className='footer'>
                     <a href="https://github.com/nivanavi">

@@ -15,9 +15,8 @@
 }
 
 .oneReview {
-    background-color: blanchedalmond;
     border-radius: 30px;
-
+    background: rgba(55, 13, 80, 0.5);
     box-shadow: rgb(196, 13, 196) -10px 0px 60px, rgb(13, 196, 196) 10px 0px 60px;
 }
 
@@ -26,15 +25,24 @@
     width: 20vw;
     height: auto;
     display: block;
-    margin: 3vh auto 3vh auto;
+    margin: 3vh auto 0 auto;
     border: 3px solid blueviolet;
 }
 
+.customer {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: monospace;
+    margin-bottom: 3vh;
+}
 
 .reviewText {
+    text-align: justify;
+    color: white;
     font-family: monospace;
     font-size: 2vh;
-    padding: 0 30px 15px 30px;
+    padding: 0 50px 15px 50px;
     display: flex;
     justify-content: center;
 }

@@ -37,6 +37,12 @@ const initionState = {
             siteLink: 'https://noqus.ru',
             githubLink: null,
             id: '4'}
+    ],
+
+    reviews: [{avatar: 'turok',
+        customer: 'александр турок',
+        review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias earum iusto labore mollitia non repudiandae. Accusantium molestiae quasi repellat suscipit totam. Adipisci architecto aut, consectetur laudantium neque quaequaerat quam?',
+    }
     ]
 };
 
