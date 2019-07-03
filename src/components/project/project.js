@@ -7,7 +7,7 @@ class Project extends Component {
             background: `linear-gradient(${this.props.color[0]}, ${this.props.color[1]})`
         };
         const triangleTop = {
-            marginBottom: '-4px',
+            marginBottom: '-5px',
         display: 'inline-block',
         width: 0,
         height: 0,
@@ -17,6 +17,7 @@ class Project extends Component {
         };
 
         const triangleBottom = {
+            marginTop: '-1px',
             display: 'inline-block',
             width: 0,
             height: 0,
@@ -37,7 +38,7 @@ class Project extends Component {
             linkStyleSite.push('linkStyle')
         }
         return (
-            <div>
+            <div className='project'>
                 <div style={triangleTop}></div>
             <div style={backColor}>
                 <div className='links'>
@@ -70,7 +71,7 @@ class Project extends Component {
                                         </div>
                                         <div className="demoProject">
                                             <img alt={this.props.demo}
-                                                 src={require(`../../images/demoProject/${this.props.demo}.jpeg`)}/>
+                                                 src={require(`../../images/demoProject/${this.props.demo}.png`)}/>
                                         </div>
                                     </div>
                                 )
@@ -79,7 +80,7 @@ class Project extends Component {
                                     <div className='demoAndDescription'>
                                         <div className="demoProject">
                                             <img alt={this.props.demo}
-                                                 src={require(`../../images/demoProject/${this.props.demo}.jpeg`)}/>
+                                                 src={require(`../../images/demoProject/${this.props.demo}.png`)}/>
                                         </div>
                                         <div className='descriptionProject'>
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias earum iusto

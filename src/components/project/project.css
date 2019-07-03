@@ -1,3 +1,7 @@
+.project {
+    z-index: 1;
+}
+
 .stack {
     margin-top: 2vh;
     margin-bottom: 2vh;

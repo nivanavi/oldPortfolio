@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from "react-redux";
 import HeaderAboutMe from './components/headerAboutMe/headerAboutMe'
 import Project from "./components/project/project"
+import Review from "./components/rewiew/review.js"
 import './app.css'
 
 class App extends Component {
@@ -26,10 +27,19 @@ class App extends Component {
                 }
 
                 <div className='footer'>
-                    <i className="fa fa-github" aria-hidden="true"></i>
-                    <i className="fa fa-vk" aria-hidden="true"></i>
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                    <a href="">
+                        <i className="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        <i className="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href="">
+                        <i className="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </div>
+
+                <Review/>
+
             </div>
         )
     }

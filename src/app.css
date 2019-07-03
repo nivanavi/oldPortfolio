@@ -3,12 +3,27 @@
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .background {
+    position: absolute;
+    z-index: -10;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("./images/bsckground/background.jpeg");
 }
+
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: blueviolet; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #2B2B2B;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: blueviolet; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
+
 
 .footer {
     display: flex;
@@ -16,22 +31,30 @@
     padding-bottom: 3vh;
 }
 
-.footer i {
+.footer a {
     width: 3vw;
     height: 3vw;
     color: white;
     margin-right: 3vw;
-    font-size: 3.4vw;
+    font-size: 3.5vw;
     border: 3px solid white;
     border-radius: 10%;
     padding: 15px;
 }
 
-.footer i:nth-child(2) {
+.footer a:nth-child(1) {
+padding: 9px 15px 21px 15px;
+}
+.footer a:nth-child(2) {
     font-size: 2.8vw;
 }
 
-.footer i:hover {
+.footer a:nth-child(3) {
+    padding: 15px 10px 15px 20px;
+    font-size: 2.8vw;
+}
+
+.footer a:hover {
     animation: radium 0.5s infinite;
 }
 

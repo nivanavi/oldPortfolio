@@ -8,7 +8,7 @@ class HeaderAboutMe extends Component {
         return(
 <div className="header">
     <div className="myPhoto">
-        <img alt='gg' src='https://im0-tub-ru.yandex.net/i?id=9e6f60d6a1a6d2610375bb06ba9d3a58&n=13'/>
+        <img alt='gg' src={require('../../images/avatar/avatar.png')}/>
     </div>
     <div className="shortInfo">
         <h1>
