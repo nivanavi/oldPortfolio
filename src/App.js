@@ -15,6 +15,7 @@ class App extends Component {
                         <Project
                             key={project.id}
                         name={project.name}
+                            description={project.description}
                             color={project.color}
                             leftRight={project.leftRight}
                         stack={project.stack}
@@ -26,19 +27,19 @@ class App extends Component {
                 })
                 }
 
+                <Review/>
+
                 <div className='footer'>
-                    <a href="">
+                    <a href="https://github.com/nivanavi">
                         <i className="fa fa-github" aria-hidden="true"></i>
                     </a>
-                    <a href="">
+                    <a href="https://vk.com/nivanavi">
                         <i className="fa fa-vk" aria-hidden="true"></i>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/nivanavi/">
                         <i className="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
-
-                <Review/>
 
             </div>
         )

@@ -64,7 +64,9 @@ padding: 9px 15px 21px 15px;
        border-radius: 10%;
     }
     50% {border-radius: 50%;
-    color: blueviolet}
+    color: blueviolet;
+    box-shadow: rgb(13, 196, 196) -10px 0px 30px, rgb(196, 13, 196) 10px 0px 30px;
+    }
     100% { border-radius: 10%; }
 
 }

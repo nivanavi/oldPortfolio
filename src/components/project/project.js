@@ -64,10 +64,7 @@ class Project extends Component {
                                 return (
                                     <div className='demoAndDescription'>
                                         <div className='descriptionProject'>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias earum iusto
-                                            labore mollitia non repudiandae. Accusantium molestiae quasi repellat
-                                            suscipit totam. Adipisci architecto aut, consectetur laudantium neque quae
-                                            quaerat quam?
+                                            {this.props.description}
                                         </div>
                                         <div className="demoProject">
                                             <img alt={this.props.demo}
@@ -83,10 +80,7 @@ class Project extends Component {
                                                  src={require(`../../images/demoProject/${this.props.demo}.png`)}/>
                                         </div>
                                         <div className='descriptionProject'>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias earum iusto
-                                            labore mollitia non repudiandae. Accusantium molestiae quasi repellat
-                                            suscipit totam. Adipisci architecto aut, consectetur laudantium neque quae
-                                            quaerat quam?
+                                            {this.props.description}
                                         </div>
                                     </div>
                                 )
