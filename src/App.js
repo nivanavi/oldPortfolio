@@ -17,11 +17,11 @@ class App extends Component {
                         name={project.name}
                             description={project.description}
                             color={project.color}
-                            leftRight={project.leftRight}
                         stack={project.stack}
                         demo={project.demo}
                         githubLink={project.githubLink}
                             siteLink={project.siteLink}
+                            leftRight={this.props.myProjects.projects.indexOf(project) % 2}
                         />
                     )
                 })
@@ -30,6 +30,7 @@ class App extends Component {
                 { this.props.myProjects.reviews.map((review) => {
                     return (
                             <Review
+                                key={review.id}
                             avatar={review.avatar}
                             customer={review.customer}
                             review={review.review}

@@ -23,17 +23,18 @@
 @keyframes likeMac {
     from,
     to {
-        margin-bottom: 0;
         transform: scale(1);
     }
     50% {
-        margin-top: -3vh;
         transform: scale(1.1);
     }
     100% {
-        margin-bottom: 0;
         transform: scale(1);
     }
+}
+
+.stackLink {
+    display: inline-block;
 }
 
 
@@ -58,8 +59,6 @@
 .demoProject img {
     border-radius: 5px;
     width: 100%;
-
-    box-shadow: rgb(196, 13, 196) -10px 0px 35px, rgb(13, 196, 196) 10px 0px 35px;
 }
 
 

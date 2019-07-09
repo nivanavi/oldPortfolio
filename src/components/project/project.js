@@ -4,7 +4,7 @@ import './project.css'
 class Project extends Component {
     render() {
         const backColor = {
-            background: `linear-gradient(${this.props.color[0]}, ${this.props.color[1]})`
+            background: this.props.color
         };
         const triangleTop = {
             marginBottom: '-5px',
@@ -13,7 +13,7 @@ class Project extends Component {
         height: 0,
         borderStyle: 'solid',
         borderWidth: '0 0 17vh 100vw',
-        borderColor: `transparent transparent ${this.props.color[0]} transparent`
+        borderColor: `transparent transparent ${this.props.color} transparent`
         };
 
         const triangleBottom = {
@@ -23,7 +23,7 @@ class Project extends Component {
             height: 0,
             borderStyle: 'solid',
         borderWidth: '17vh 100vw 0 0',
-        borderColor: `${this.props.color[1]} transparent transparent transparent`
+        borderColor: `${this.props.color} transparent transparent transparent`
         };
 
         const linkStyleGit = ['githubLink'];
@@ -53,22 +53,26 @@ class Project extends Component {
                 <div className='stack'>
                     {this.props.stack.map((one) => {
                         return (
-                            <img alt={one} src={require(`../../images/stack/${one}.png`)}/>
+                            <div key={one[0]} className='stackLink'>
+                            <a href={one[1]}>
+                            <img alt={one} src={require(`../../images/stack/${one[0]}.png`)}/>
+                            </a>
+                            </div>
                         )
                     })}
                 </div>
 
                 {
                     (() => {
-                            if (this.props.leftRight === 1) {
+                            if (this.props.leftRight !== 1) {
                                 return (
                                     <div className='demoAndDescription'>
                                         <div className='descriptionProject'>
                                             {this.props.description}
                                         </div>
                                         <div className="demoProject">
-                                            <img alt={this.props.demo}
-                                                 src={require(`../../images/demoProject/${this.props.demo}.png`)}/>
+                                            <img alt={this.props.name}
+                                                 src={require(`../../images/demoProject/${this.props.name}.png`)}/>
                                         </div>
                                     </div>
                                 )
@@ -76,8 +80,8 @@ class Project extends Component {
                                 return (
                                     <div className='demoAndDescription'>
                                         <div className="demoProject">
-                                            <img alt={this.props.demo}
-                                                 src={require(`../../images/demoProject/${this.props.demo}.png`)}/>
+                                            <img alt={this.props.name}
+                                                 src={require(`../../images/demoProject/${this.props.name}.png`)}/>
                                         </div>
                                         <div className='descriptionProject'>
                                             {this.props.description}
