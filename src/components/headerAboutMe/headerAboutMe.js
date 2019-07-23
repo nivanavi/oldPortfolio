@@ -16,7 +16,7 @@ class HeaderAboutMe extends Component {
         </h1>
         <div className='aboutMe'>
         <p>
-            мне 21 год и уже около года я стремлюсь стать full-stack разработчиком. В 2018 году я закончил МТК по специальности "логистика" ниже вы можете ознакомиться с моими проектами или
+            Mне 21 год и уже около года я стремлюсь стать full-stack разработчиком. В 2018 году я закончил МТК по специальности "логистика" ниже вы можете ознакомиться с моими проектами или
             &nbsp; <span className='showLinks'>
             <div className='hideLinks'>
                  <a href="https://github.com/nivanavi">

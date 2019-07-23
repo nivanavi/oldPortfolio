@@ -70,7 +70,7 @@
 
 .siteLink {
     display: inline-block;
-    color: dimgray;
+    color: darkgray;
     font-size: 1.5vw;
     font-family: monospace;
     text-transform: uppercase;
@@ -80,7 +80,7 @@
 .githubLink {
     margin-left: 2vw;
     display: inline-block;
-    color: dimgray;
+    color: darkgray;
     font-size: 3vw;
     font-family: monospace;
     text-transform: uppercase;
