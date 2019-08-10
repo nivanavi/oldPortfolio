@@ -1,15 +1,13 @@
  .header {
     display: grid;
     grid-template-columns: 4fr 8fr;
-     min-height: 30vw;
+     min-height: 20vh;
 }
-
 
 .myPhoto img {
     z-index: -1;
     position: absolute;
     margin-top: 3vh;
-    margin-left: 2vw;
     width:  26vw;
     height: auto;
 }
@@ -46,8 +44,8 @@
 .shortInfo p {
     text-align: justify;
     font-size: 2vw;
-    margin-top: 5vh;
-    margin-right: 14vw;
+    margin-top: 50px;
+    margin-right: 50px;
     font-family: monospace;
     overflow: hidden;
 }
@@ -118,3 +116,81 @@
     cursor: pointer;
     border-bottom: 3px solid green;
 }
+
+ @media (max-width: 1024px) {
+     .header {
+         display: flex;
+         flex-direction: column-reverse;
+         margin-bottom: 25vw;
+         align-items: center;
+     }
+
+     .shortInfo {
+         padding-left: 50px;
+         display: flex;
+         flex-direction: column;
+     }
+
+     .shortInfo h1{
+         font-size: 4vw;
+     }
+
+     .shortInfo p{
+        font-size: 3vw;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .myPhoto img {
+         width:  30vw;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .header {
+         margin-bottom: 45vw;
+     }
+
+     .myPhoto img {
+         width:  50vw;
+     }
+
+     .shortInfo h1{
+         font-size: 5vw;
+     }
+
+     .shortInfo p{
+         font-size: 4vw;
+     }
+
+     .headHunter {
+         border-bottom: none;
+     }
+
+     .headHunter span{
+         color: blueviolet;
+     }
+ }
+
+
+ @media (max-width: 425px) {
+
+     .shortInfo h1{
+         font-size: 4.5vw;
+     }
+
+     .myPhoto img {
+         width:  50vw;
+     }
+ }
+
+
+ @media (max-width: 340px) {
+     .myPhoto img {
+         width:  50vw;
+     }
+
+     .header {
+         margin-bottom: 20vh;
+     }
+ }

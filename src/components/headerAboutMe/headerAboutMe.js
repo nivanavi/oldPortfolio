@@ -30,7 +30,7 @@ class HeaderAboutMe extends Component {
                     </a>
             </div>
             связаться со мной,</span>&nbsp;
-            а так же &nbsp; <a className='headHunter' href='https://vk.com/nivanavi'><span>посмотреть мое резюме на HeadHunter</span></a>.
+            а так же &nbsp; <a className='headHunter' href='https://vk.com/nivanavi'><span>посмотреть мое резюме на HeadHunter.</span></a>
         </p>
         </div>
     </div>
