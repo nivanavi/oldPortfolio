@@ -2,7 +2,33 @@
     display: grid;
     grid-template-columns: 4fr 8fr;
      min-height: 20vh;
+     position: relative;
 }
+
+ .moon {
+     width: 10vw;
+     height: 10vw;
+     border-radius: 50%;
+     border: 2px solid red;
+     /*background-color: yellow;*/
+     position: absolute;
+     margin-left: -10%;
+     z-index: -100;
+     background-position: center center;
+     /*animation: moonInterval 7s infinite;*/
+ }
+
+ /*@keyframes moonInterval {*/
+ /*    0%{*/
+ /*        margin-left: -10vw;*/
+ /*        margin-top: 0;*/
+ /*    }*/
+ /*    100%{*/
+ /*        margin-left: 110vw;*/
+ /*        margin-top: 30vh;*/
+ /*    }*/
+ /*}*/
+
 
 .myPhoto img {
     z-index: -1;

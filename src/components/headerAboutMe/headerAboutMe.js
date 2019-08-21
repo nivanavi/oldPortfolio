@@ -2,11 +2,42 @@ import React, {Component} from 'react';
 import './headerAboutMe.css'
 
 
+window.addEventListener('scroll', moonMove);
+
+const moon = document.getElementById('moon');
+console.log(this.moon)
+
+const data = new Date();
+let time = data.getHours();
+
+if (time > 12) {
+    moon.style.backgroundImage = 'url("../../images/weather/moon.png")';
+
+}
+
+function moonMove() {
+    let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let windowHeight = document.documentElement.scrollHeight + document.documentElement.clientHeight;
+    let move = windowScroll / windowHeight * 2000;
+    this.moon.style.marginLeft = `${-10 + move}%`;
+    this.moon.style.marginTop = `${0 + (move / 4.5)}%`;
+
+    if (move > 150) {
+        this.moon.style.display = 'none';
+    } else {
+        this.moon.style.display = 'block';
+    }
+
+}
+
 class HeaderAboutMe extends Component {
 
     render() {
         return(
 <div className="header">
+
+    <div className='moon' id='moon'></div>
+
     <div className="myPhoto">
         <img alt='gg' src={require('../../images/avatar/avatar.png')}/>
     </div>
